@@ -1,0 +1,23 @@
+REQUIREMENTS STEPS::
+
+-Pip install virtualenv
+-virtualenv env
+-.\env\Scripts\activate.(bin/ps1) [Activate the vartual env]
+-Deactivate (to deativate the environment)
+
+RUN THE CODE:: python.\app or main.py(whichever file name was given by you)
+
+CHANGE THE PORT NO IN FLASK::
+--app.run(debug = True,port =8000)
+
+DATABASE::::(SQLite)
+SQLALCHEMY    === pip install flask_sqlalchemy
+
+Checking DB through Powershell:::
+from app import db
+db.create_al()
+
+CREATING REQUIREMENTS.TXT FILE:
+
+pip install gunicorn
+pip freeze > requirements.txt 
